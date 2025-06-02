@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>简易钱包</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>简易钱包</h1>
+        <div class="inputs">
+            <label>收入: <input type="number" id="income" placeholder="0"></label>
+            <label>支出: <input type="number" id="expense" placeholder="0"></label>
+            <label>货币:
+                <select id="currency">
+                    <option value="CNY">CNY</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </label>
+            <button id="add-btn">添加</button>
+        </div>
+        <h2>当前余额: <span id="balance">0</span> 元</h2>
+        <ul id="records"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
